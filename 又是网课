@@ -105,3 +105,27 @@ int main()
 	}
 	return 0;
 }
+//用函数进行打印自加 
+#include<stdio.h>
+void Add(int *p)
+{
+	(*p)++;
+}
+int main()
+{
+	int num=0;
+	Add(&num);
+	printf("num=%d\n",num);
+	Add(&num);
+	printf("num=%d\n",num);
+	Add(&num);
+	printf("num=%d\n",num);
+	return 0;
+}
+//输出结果为4321 
+#include<stdio.h>
+int main()
+{
+	printf("%d",printf("%d",printf("%d",43)));
+	return 0;
+}
